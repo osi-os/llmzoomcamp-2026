@@ -3,4 +3,4 @@
 faq.db*
 *.db
 *.db-shm
-*.db-wal
+*.db-wal*.env
