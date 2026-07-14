@@ -6,6 +6,7 @@ from openai import OpenAI
 from ingest import load_faq_data, build_index
 # from rag_helper import RAGBase
 from metrics import RAGWithMetrics
+from db_save import save_conversation
 
 
 def create_assistant():
@@ -28,3 +29,5 @@ if __name__ == "__main__":
 
     answer = assistant.rag(query)
     print(answer)
+
+    save_conversation(assistant.last_call, query, "llm-zoomcamp")
