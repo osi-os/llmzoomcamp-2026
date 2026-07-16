@@ -3,6 +3,9 @@ from assistant import create_assistant
 from db_save import save_conversation
 from db_feedback import save_feedback
 
+from judge import evaluate_relevance
+from db_feedback import save_feedback
+
 assistant = create_assistant()
 
 st.title("Course Assistant")
@@ -37,3 +40,5 @@ with col2:
         cid = st.session_state.conversation_id
         save_feedback(cid, "user", score=-1)
         st.write("Thanks for the feedback!")
+
+
