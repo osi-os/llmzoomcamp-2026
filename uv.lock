@@ -10,6 +10,12 @@ resolution-markers = [
     "python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 
+[manifest]
+members = [
+    "llm-zoomcamp-hw5",
+    "llmzoomcamp-2026",
+]
+
 [[package]]
 name = "altair"
 version = "6.2.2"
@@ -504,6 +510,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/59/30/a8a0c15f9480dc91b5b7f11ebd26105e5f80898d7ff02da197fef35d8395/gitpython-3.1.51.tar.gz", hash = "sha256:22c9c94bb6b0b9f3c7157c684fece45a414cea204586b600beae6cd4570dcd6d", size = 223519, upload-time = "2026-07-12T13:40:07.922Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f8/11/1232bb1ba52a230f20ff08e1b3df7cd9d43a71b61cc0a1c37941064fe4c7/gitpython-3.1.51-py3-none-any.whl", hash = "sha256:d5b29685708f3c80a56db040b665bfd69492c8e150b5848532af8013b686c5a4", size = 215246, upload-time = "2026-07-12T13:40:06.43Z" },
+]
+
+[[package]]
+name = "gitsource"
+version = "0.0.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-frontmatter" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b9/3b/52da10f861beeec427600010de4506d89f6da9126e0b9499650fad5c0c22/gitsource-0.0.5.tar.gz", hash = "sha256:98e1bd7c4da6abe477071f876945c1203b35dc9ef10dc1f842cad4d5953ad3cb", size = 73770, upload-time = "2026-06-05T10:42:25.813Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/78/09a6508d8cd50d730c15368af4f1950236f3adce29c38502f79cc8710600/gitsource-0.0.5-py3-none-any.whl", hash = "sha256:3a6030f61e264628606f8438b8cb633046ae158757aa242504a4c0fc4630042c", size = 8981, upload-time = "2026-06-05T10:42:24.824Z" },
 ]
 
 [[package]]
@@ -1081,6 +1100,25 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/da/34/28fff3ab31ccff1fd4f6c7c7b0ceb2b6968d8ea4950663eadcb5720591a0/lark-1.3.1.tar.gz", hash = "sha256:b426a7a6d6d53189d318f2b6236ab5d6429eaf09259f1ca33eb716eed10d2905", size = 382732, upload-time = "2025-10-27T18:25:56.653Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/82/3d/14ce75ef66813643812f3093ab17e46d3a206942ce7376d31ec2d36229e7/lark-1.3.1-py3-none-any.whl", hash = "sha256:c629b661023a014c37da873b4ff58a817398d12635d3bbb2c5a03be7fe5d1e12", size = 113151, upload-time = "2025-10-27T18:25:54.882Z" },
+]
+
+[[package]]
+name = "llm-zoomcamp-hw5"
+version = "0.1.0"
+source = { virtual = "llm-zoomcamp-hw5" }
+dependencies = [
+    { name = "gitsource" },
+    { name = "minsearch" },
+    { name = "openai" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "gitsource", specifier = ">=0.0.5" },
+    { name = "minsearch", specifier = ">=0.1.0" },
+    { name = "openai", specifier = ">=2.44.0" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
 
 [[package]]
@@ -1893,6 +1931,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/82/ed/0301aeeac3e5353ef3d94b6ec08bbcabd04a72018415dcb29e588514bba8/python_dotenv-1.2.2.tar.gz", hash = "sha256:2c371a91fbd7ba082c2c1dc1f8bf89ca22564a087c2c287cd9b662adde799cf3", size = 50135, upload-time = "2026-03-01T16:00:26.196Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0b/d7/1959b9648791274998a9c3526f6d0ec8fd2233e4d4acce81bbae76b44b2a/python_dotenv-1.2.2-py3-none-any.whl", hash = "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a", size = 22101, upload-time = "2026-03-01T16:00:25.09Z" },
+]
+
+[[package]]
+name = "python-frontmatter"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9d/e8/79cbe69864d44f3b48e70ebee0a872a7d5a4e7150c9f8577ed7a5beefff0/python_frontmatter-1.3.0.tar.gz", hash = "sha256:acc73e477a568dc2a25c9e130c6c68ae8daa8c204c8f7e813db47d6a7280dcf2", size = 8322, upload-time = "2026-05-20T19:21:44.164Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/a3/17c284b4f4d8ad50f0f9ba70ad8fcc35c777aeafcdbbffdd91bbdc5ab379/python_frontmatter-1.3.0-py3-none-any.whl", hash = "sha256:9f7dd9260bec99044219159a329f64f039087f9d1a2124c9442556f2fe6f82ec", size = 10562, upload-time = "2026-05-20T19:21:43.323Z" },
 ]
 
 [[package]]
