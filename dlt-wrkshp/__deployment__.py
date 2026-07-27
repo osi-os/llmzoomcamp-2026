@@ -1,6 +1,6 @@
-"""Deployment manifest — import the pipelines and notebooks you want to deploy and list them in __all__."""
+"""Agent logs pipeline — ingest Claude Code agent logs from the test traces API"""
 
-# from pipeline import my_pipeline
-# from notebook import my_notebook
+from rest_api_pipeline import ingest_agent_logs
+import agent_traces_dashboard
 
-__all__: list[str] = []
+__all__ = ["ingest_agent_logs", "agent_traces_dashboard"]

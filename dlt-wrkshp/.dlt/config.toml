@@ -4,6 +4,15 @@
 log_level="WARNING"  # the system log level of dlt
 # use the dlthub_telemetry setting to enable/disable anonymous usage data reporting, see https://dlthub.com/docs/reference/telemetry
 dlthub_telemetry = true
+workspace_id = "8de8be28-f4d2-414c-9131-e182f61148fc"
+organization_id = "3b99b1b9-1736-407c-a512-382578404e85"
 
 [sources.filesystem]
 bucket_url = "file:///Users/osiosman/.claude/projects"
+
+[sources.agent_logs]
+base_url = "https://test-agent-traces-api-xt2e7ottma-ew.a.run.app"
+
+
+[workspace.settings]
+name = "dlt-wrkshp"
