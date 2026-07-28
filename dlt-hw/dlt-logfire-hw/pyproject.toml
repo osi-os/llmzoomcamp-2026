@@ -1,0 +1,9 @@
+[project]
+name = "dlt-logfire-hw"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dlt[duckdb,hub]>=1.29.1",
+]

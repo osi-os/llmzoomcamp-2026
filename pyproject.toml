@@ -23,4 +23,6 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "llm-zoomcamp-hw5",
+    "dlt-hw",
+    "dlt-hw/dlt-logfire-hw",
 ]
